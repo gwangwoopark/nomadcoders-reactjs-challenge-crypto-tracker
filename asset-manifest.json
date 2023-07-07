@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/nomadcoders-reactjs-challenge-crypto-tracker/static/js/main.1a18aec9.js",
+    "main.js": "/nomadcoders-reactjs-challenge-crypto-tracker/static/js/main.a7d885a0.js",
     "index.html": "/nomadcoders-reactjs-challenge-crypto-tracker/index.html",
-    "main.1a18aec9.js.map": "/nomadcoders-reactjs-challenge-crypto-tracker/static/js/main.1a18aec9.js.map"
+    "main.a7d885a0.js.map": "/nomadcoders-reactjs-challenge-crypto-tracker/static/js/main.a7d885a0.js.map"
   },
   "entrypoints": [
-    "static/js/main.1a18aec9.js"
+    "static/js/main.a7d885a0.js"
   ]
 }
