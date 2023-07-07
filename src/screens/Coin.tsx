@@ -150,8 +150,12 @@ function Coin() {
   const location = useLocation();
   const state = location.state as RouteState;
 
-  const priceMatch = useMatch("/:coinId/price");
-  const chartMatch = useMatch("/:coinId/chart");
+  const priceMatch = useMatch(
+    "/nomadcoders-reactjs-challenge-crypto-tracker/:coinId/price"
+  );
+  const chartMatch = useMatch(
+    "/nomadcoders-reactjs-challenge-crypto-tracker/:coinId/chart"
+  );
 
   const { isLoading: infoLoading, data: infoData } = useQuery<InfoData>({
     queryKey: ["info", coinId],
@@ -178,7 +182,9 @@ function Coin() {
           {state?.name ? state.name : loading ? "Loading.." : infoData?.name}
         </Title>
         <Back>
-          <Link to={"/"}>&larr;</Link>
+          <Link to={"/nomadcoders-reactjs-challenge-crypto-tracker/"}>
+            &larr;
+          </Link>
         </Back>
       </Header>
       {loading ? (
@@ -213,11 +219,11 @@ function Coin() {
           </Overview>
           <Tabs>
             <Tab isActive={chartMatch !== null}>
-              <Link to={`/${coinId}/chart`}>Chart</Link>
+              <Link to={"chart"}>Chart</Link>
             </Tab>
             <Tab isActive={priceMatch !== null}>
               <Link
-                to={`/${coinId}/price`}
+                to={"price"}
                 state={{
                   name: infoData?.name,
                   symbol: infoData?.symbol,

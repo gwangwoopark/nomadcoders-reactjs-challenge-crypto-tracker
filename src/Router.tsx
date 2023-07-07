@@ -6,7 +6,7 @@ import Price from "./screens/Price";
 import Chart from "./screens/Chart";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/nomadcoders-reactjs-challenge-crypto-tracker/",
     element: <App />,
     children: [
       {
